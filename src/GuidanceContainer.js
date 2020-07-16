@@ -33,7 +33,6 @@ export default class GuidanceContainer extends React.Component {
                                 isPriority={factor.isPriority}
                             />
                         )}
-                           
                     </tbody>
                 </table>
             </div>

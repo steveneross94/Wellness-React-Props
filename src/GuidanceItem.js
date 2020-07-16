@@ -1,19 +1,16 @@
 import React from 'react';
 
 
-class GuidanceItem extends React.Component {
-    render() {
-        return (
-            <tr>
-                <td>{this.props.title}</td>
-                <td><img src={this.props.image} alt={this.props.title}/></td>
-                <td>{this.props.description}</td>
-                <td>{'⭐️'.repeat(this.props.stars)}</td>
-                <td>{this.props.isPriority ? 'YES' : 'NO'}</td>
-            </tr>
-        )
-
-    }
+function GuidanceItem ({title,image,description,isPriority,stars}) {
+    return (
+        <tr>
+            <td>{title}</td>
+            <td><img src={image} alt={title}/></td>
+            <td>{description}</td>
+            <td>{'⭐️'.repeat(stars)}</td>
+            <td>{isPriority ? 'YES' : 'NO'}</td>
+        </tr>
+    )
 }
 
 export default GuidanceItem;
